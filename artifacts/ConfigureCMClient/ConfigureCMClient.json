@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Configure CM Agent",
+    "description": "Configures ConfigMgr Agent",
+    "publisher": "Alex Verboon",
+    "tags": [
+        "Windows",
+        "ConfigMgr",
+        "Agent"
+    ],
+    "targetOsType": "Windows",
+    "parameters": {
+        "CmSite": {
+            "type": "string",
+            "displayName": "CMSite",
+            "description": "The name of the ConfigMgr Site",
+            "defaultValue": "TS1"
+        },
+    },
+    "runCommand": {
+"commandToExecute": "powershell.exe -ExecutionPolicy bypass -File cmagentconfig.ps1"
+    }
+}
