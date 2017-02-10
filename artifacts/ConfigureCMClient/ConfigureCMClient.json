@@ -16,8 +16,9 @@
             "description": "The name of the ConfigMgr Site",
             "defaultValue": "TS1"
         },
-    },
+    
     "runCommand": {
 "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File cmagentconfig.ps1"
     }
 }
+
